@@ -1,0 +1,58 @@
+Telco Customer Churn: EDA Summary Report
+
+1. Objective: To understand customer churn patterns by exploring demographic, service, and usage characteristics in the Telco dataset.
+
+2. Dataset Overview
+Rows: ~7,000 customers
+Columns: 21 columns including demographics, services, pricing, and churn status
+Target Variable: Churn (Yes/No)
+
+3. Data Quality
+No significant missing values.
+TotalCharges initially stored as an object, correctly converted to float.
+Minor anomalies addressed.
+
+4. Univariate Analysis
+Categorical Features:
+Churn Rate: ~27% customers churn.
+Gender: Almost equal distribution across churn status.
+Senior Citizens have a higher churn rate.
+Customers without Dependents, without Partner, or those with Fiber optic connections tend to churn more.
+
+Numeric Features:
+Tenure: Customers with longer tenures churn less.
+Monthly Charges: Higher charges slightly correlate with higher churn.
+Total Charges: Similar trend as Monthly Charges.
+
+5. Bivariate Insights
+Contract Type vs Churn:
+Month-to-month contract holders churn significantly more.
+Internet Service vs Churn:
+Customers with Fiber optic connections churn at higher rates.
+Services vs Churn:
+Lack of services (Online Security, Tech Support, etc.) relates to higher churn.
+Payment Method vs Churn:
+Customers using electronic checks have a higher churn rate.
+
+6. Multivariate Insights
+Customers with Fiber optic internet and no Tech Support have the highest churn rates.
+Longer tenures and lower charges generally relate to lower churn, regardless of service or contract.
+Strong correlations:
+Tenure vs Churn: Negative (-0.35) — longer tenures reduce churn.
+Monthly Charges vs Churn: Positive (0.19).
+Total Charges vs Churn: Negative (-0.20).
+
+7. Key Takeaways
+High Risk Group:
+Month-to-month contract holders.
+Customers with Fiber optic internet and no Tech Support.
+Customers paying via Electronic Checks.
+
+Low Risk Group:
+Customers with long tenures.
+Customers with additional services (Online Security, Tech Support).
+Actionable Insights:
+Focus on incentives for long-term contract signups.
+Enhance service support offerings for fiber optic customers.
+Evaluate pricing structure for high-churn groups.
+
